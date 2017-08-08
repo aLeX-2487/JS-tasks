@@ -1,0 +1,186 @@
+@charset "UTF-8";
+body{background-color: #f0f0f0;}
+button{cursor: pointer;}
+/*头部部分*/
+header{
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  -webkit-display:flex;
+  -webkit-justify-content: space-between;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #29bde0;
+  button{
+    border: none;
+    outline:none;
+    background-color: transparent;
+    color: #fff;
+  }
+  .iconfont{
+    font-size: 25px!important;
+  }
+}
+main{
+  padding: 1rem .5rem;
+  .part-1{
+    margin: 0 .5rem;
+    display: flex;
+    flex-wrap: nowrap;
+    -webkit-display: flex;
+    -webkit-flex-wrap: nowrap;
+    .left-part{
+      padding: 3rem 2rem;
+      @media screen and (max-width:750px){
+        padding: 2.5rem 1.5rem;
+      }
+      @media screen and (max-width:500px){
+        padding: 2rem 1rem;
+      }
+      width: 2rem;
+      border-right: solid 1px #d9d9d9;
+      font-size: 2rem;
+      text-align: center;
+      line-height: 2.2rem;
+      background-color: #fff;
+    }
+    .right-part{
+      flex: 1;
+      background-color: #fbfbfb;
+      display: flex;
+      flex-direction: column;
+      -webkit-display: flex;
+      -webkit-flex-direction: column;
+      .information{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        -webkit-flex: 1;
+        -webkit-display: flex;
+        -webkit-align-items: center;
+        -webkit-justify-content: space-around;
+        -webkit-flex-wrap: wrap;
+        color:#a1a1a1;
+        p{
+          span{vertical-align: middle;}
+          input{
+            width: 2rem;
+            border: none;
+            font-size: 1.6rem;
+            text-align: center;
+            color:#a1a1a1;
+            background-color: transparent;
+          }
+        }
+        p::before{
+          margin: 0 2px;
+          content: "";
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          vertical-align: middle;
+        }
+        .killer::before{background-color: #fab344;}
+        .civilian::before{background-color: #29bde0;}
+      }
+      .set{
+        padding: .8rem;
+        text-align: center;
+        border: none;
+        border-top: solid 1px #d9d9d9;
+        outline: none;
+        font-size: 1.8rem;
+        color: #29bde0;
+        background-color: transparent;
+      }
+    }
+  }
+  .part-2{
+    margin: .5rem;
+    padding: 1rem;
+    background-color: #fbfbfb;
+    form{
+      span{vertical-align: middle;}
+      .num{
+        margin: 0 .8rem;
+        display: inline-block;
+        width: 3rem;
+        text-align: center;
+        color: #fab344;
+        font-size: 1.6rem;
+      }
+      .control{
+        display: inline-block;
+        border: solid 1px #d9d9d9;
+        outline: none;
+        color: #fab344;
+        background-color: transparent;
+      }
+      .range-part{
+        margin: 2rem 0 1.5rem 1rem;
+        white-space: nowrap;
+        display: block;
+        /*自定义滑块样式*/
+
+        /*清除默认样式*/
+        input[type=range] {
+          width: 250px;
+          max-width: 70%;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+        }
+        input[type=range]::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+        }
+
+        /*设置轨道样式*/
+        input[type=range]::-webkit-slider-runnable-track {
+          height: 4px;
+          background-color: #ffe6be;
+        }
+        input[type=range]::-moz-range-track {
+          height: 4px;
+          background-color: #ffe6be;
+        }
+        input[type=range]:focus {
+          outline: none;
+        }
+        /*设置滑块样式*/
+        input[type=range]::-webkit-slider-thumb {
+          position: relative;
+          bottom: 8px;
+          height: 20px;
+          width: 40px;
+          background: url("images/slider.png") no-repeat center;
+          background-size: contain;
+          cursor: pointer;
+        }
+        input[type=range]::-moz-range-thumb {
+          position: relative;
+          bottom: 8px;
+          height: 20px;
+          width: 40px;
+          border: none;
+          background: url("images/slider.png") no-repeat center;
+          background-size: contain;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  /*发牌按钮*/
+  .deal{
+    margin: 1rem auto;
+    display: block;
+    width: calc(100% - 1rem);
+    border: none;
+    outline: none;
+    padding: 1.5rem 0;
+    color: #fff;
+    font-size: 2rem;
+    background-color: #fab344;
+  }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo2</title>
+    <style type="text/css">
+        div{
+            position:relative;
+            width:200px;
+            height:50px;
+            -webkit-border-radius:5px;
+            -moz-border-radius:5px;
+            border-radius:5px;
+            background-color: grey;
+        }
+        button{
+            width: 100px;
+            height:50px;
+            position: absolute;
+            border: none;
+            border-radius:5px;
+            outline: none;
+        }
+
+    </style>
+</head>
+
+<body>
+<div>
+    <button type="button"></button>
+</div>
+<script type="text/javascript" src="../jQuery/jquery-3.2.1.js"></script>
+<script type="text/javascript">
+    var switchState={
+        //当前状态
+        currentState:"off",
+        //绑定事件，规定各个状态在什么触发条件下切换
+        initialize:function(){
+            $("button").on("click",this.transition());
+        },
+        //状态转换
+        transition:function(){
+            switch (this.currentState){
+                case "off":
+                    this.currentState="on";
+                    $("button").css({"left":"100px","backgroundColor":"green"});
+                    break;
+                case "on":
+                    this.currentState="off";
+                    $("button").css({"left":"0","backgroundColor":"black"});
+                    break;
+            }
+        }
+    };
+    $("button").on("click",function(){switchState.transition();});
+</script>
+
+</body>
+</html>

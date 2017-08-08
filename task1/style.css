@@ -1,0 +1,34 @@
+body{margin: 0;}
+.con{
+    margin: 5% auto 1em;
+    width: 500px;
+    height: 500px;
+    max-width: 95vw;
+    max-height: 95vw;
+}
+.item {
+    margin: 1.5%;
+    float: left;
+    border-radius: 5px;
+    width: 30%;
+    height: 30%;
+    background-color: #fea500;
+}
+button{
+    margin: .5em auto;
+    display: block;
+    width: 550px;
+    max-width: 100vw;
+    height: 3em;
+    border: solid 1px #fea500;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    color: #fea500;
+    background-color: transparent;
+    cursor: pointer;
+}
+button:focus{
+    color: #fff;
+    background-color: #fea500;
+}

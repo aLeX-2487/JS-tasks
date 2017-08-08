@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+    <meta http-equiv="x-ua-compatible" content="IE-edge">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style-page3.css">
+    <title>page3</title>
+</head>
+<body>
+<header>
+    <a class="iconfont" href='page2.html'>&#xe602;</a>
+    <span>查看身份</span>
+    <a class="iconfont" href='page1.html'>&#xe641;</a>
+</header>
+<div id="contain1" class="contain contain1">
+   <div class="row">
+       <div class="top_icon seePage">1</div>
+       <img src="images/01.png">
+   </div>
+    <button id="btn-see" class="seePage" type="button" onclick="see()">查看1号身份</button>
+</div>
+
+<div id="contain2" class="contain contain2">
+   <div class="row">
+       <div class="top_icon hidPage">1</div>
+       <img src="images/02.png">
+       <p id="role" class="role">角色</p>
+       <p id="remind_words" class="remind_words"></p>
+   </div>
+    <button id="btn-hid" class="hidPage" type="button" onclick="hid()">隐藏并传给2号</button>
+    <button id="judge-btn" type="button" onclick="location.href='page4.html'">法官查看</button>
+</div>
+<script src="script-page3.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+    <meta http-equiv="x-ua-compatible" content="IE-edge">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style-page2.css">
+    <title>page2</title>
+</head>
+<body>
+<header>
+    <button class="iconfont" type="button" onclick="location.href='page1.html'">&#xe602;</button>
+    <span>参数设置</span>
+    <button class="iconfont" type="button" onclick="">&#xe642;</button>
+</header>
+<main>
+    <div class="part-1">
+        <div class="left-part">玩家配比</div>
+        <div class="right-part">
+            <div class="information">
+                <p id="killer" class="killer">
+                    <label for="killerInput">
+                        <span>杀手</span><input id="killerInput" type="text" value="3" disabled="disabled" onchange="changeNum()"><span>人</span>
+                    </label>
+                </p>
+                <p id="civilian" class="civilian">
+                    <label for="civilianInput">
+                        <span>水民</span><input id="civilianInput" type="text" value="9" disabled="disabled" onchange="changeNum()"><span>人</span>
+                    </label>
+                </p>
+            </div>
+            <button class="set" type="button" onclick="setBy()">点击设置<span class="iconfont">&#xe6f6;</span></button>
+        </div>
+    </div>
+    <div class="part-2">
+        <form>
+            <span>玩家人数</span>
+            <input id="num" class="num" name="num" type="text" onchange="numToRange()">
+            <span>人</span>
+            <span class="range-part">
+                <button type="button" class="control" onclick="decrease()">-</button>
+                <input id="myRange" class="range" type="range" name="num" min="6" max="18" oninput="RangeToNum()">
+                <button type="button" class="control" onclick="increase()">+</button>
+            </span>
+        </form>
+    </div>
+    <button id="deal" class="deal" type="button" onclick="goAhead()">去发牌</button>
+    <span id="myTest"></span>
+</main>
+<script src="script-page2.js"></script>
+</body>
+</html>

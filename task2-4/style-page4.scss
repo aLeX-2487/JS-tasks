@@ -1,0 +1,80 @@
+@charset "UTF-8";
+body{background-color: #29bde0;}
+header{
+  height: 4rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  -webkit-display:flex;
+  -webkit-justify-content: space-between;
+  border-bottom: solid 1px #74d4eb;
+  font-size: 2rem;
+  line-height:4rem;
+  color: #fff;
+  button{
+    border: none;
+    outline:none;
+    background-color: transparent;
+    color: #fff;
+  }
+  .iconfont{
+    font-size: 25px!important;
+  }
+}
+#contain{
+  width: 800px;
+  max-width: 100%;
+  margin: 3% auto 0;
+  text-align: center;
+  font-size: 0;
+  .items{
+    margin-top: 3rem;
+    width: 33.33%;
+    @media screen and (max-width: 250px){width: 50%;}
+    @media screen and (max-width: 180px){width: 100%;}
+    display: inline-block;
+    font-size: 1.6rem;
+    .item{
+      margin: 0 auto;
+      width: 6.5rem;
+      .playerType{
+        height: 5rem;
+        line-height: 5rem;
+        color:#565656;
+        background-color: #F5C97B;
+      }
+      .order{
+        height: 1.5rem;
+        color:#fff;
+        background-color: #83b09a;
+      }
+    }
+    .icon{
+      margin: .8rem auto 0;
+      width: 25px;
+      height: 25px;
+      border: none;
+      outline: none;
+      background: url("images/03.png") center;
+      background-size: contain;
+      visibility: hidden;
+      cursor: pointer;
+    }
+  }
+  .items:hover .icon{
+    visibility: visible;
+  }
+}
+.startGame{
+  width: 600px;
+  max-width: 90%;
+  margin: 15% auto 0;
+  padding: 1rem 0;
+  display: block;
+  border: none;
+  outline:none;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color:#F5C97B;
+}
+

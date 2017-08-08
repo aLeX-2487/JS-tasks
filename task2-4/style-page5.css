@@ -1,0 +1,132 @@
+body {
+  background-color: #f0f0f0; }
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+  cursor: pointer; }
+
+header {
+  padding: 0 1rem;
+  height: 4rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  -webkit-display: flex;
+  -webkit-justify-content: space-between;
+  border-bottom: solid 1px #74d4eb;
+  font-size: 2rem;
+  line-height: 4rem;
+  color: #fff;
+  background-color: #29bde0; }
+  header button {
+    background-color: transparent;
+    color: #fff; }
+  header .iconfont {
+    font-size: 25px !important; }
+
+.date {
+  margin: .5rem 0 0;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #24a7c6;
+  background-color: #fff; }
+
+.angle-top {
+  width: 0;
+  height: 0;
+  margin: 0 auto;
+  border-left: solid 10px transparent;
+  border-bottom: solid 10px #fff;
+  border-right: solid 10px transparent; }
+
+main {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-display: flex;
+  -webkit-flex-direction: column;
+  -webkit-justify-content: center;
+  background-color: #fff; }
+  main .line {
+    margin: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-display: flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    text-align: center; }
+    main .line div {
+      display: inline-block;
+      font-size: 1.6rem; }
+    main .line .icon {
+      position: relative;
+      z-index: 100;
+      width: 3rem;
+      height: 3rem;
+      flex: 0 0 auto;
+      border-radius: 50%;
+      background: no-repeat center; }
+      main .line .icon hr {
+        position: relative;
+        z-index: 50;
+        top: 1.5rem;
+        left: 1.5rem;
+        width: 1px;
+        height: 200px;
+        border: none;
+        background-color: #c9c9c9; }
+    main .line .moon {
+      border: solid 1px #cacaca;
+      background: url("images/04.png") no-repeat center;
+      background-size: 60% 70%; }
+    main .line .sun {
+      border: solid 1px #cacaca;
+      background: url("images/05.png") no-repeat #fff center;
+      background-size: 70% 70%; }
+    main .line .angle-left {
+      width: 0;
+      height: 0;
+      border-top: solid .5rem transparent;
+      border-right: solid 1rem #24a7c6;
+      border-bottom: solid .5rem transparent; }
+    main .line .text {
+      width: 76rem;
+      padding: 1rem 0;
+      color: #fff;
+      background-color: #24a7c6;
+      cursor: pointer; }
+  main .result {
+    margin: 0 auto;
+    padding: 1rem 0 1rem 4rem;
+    width: 80rem;
+    max-width: 100%;
+    box-sizing: border-box; }
+
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  background-color: rgba(36, 167, 198, 0.5); }
+  footer button {
+    width: 30%;
+    min-width: 4em;
+    margin: 1.5rem 0;
+    padding: 1rem 0;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #fdbc48; }
+    @media screen and (max-width: 750px) {
+      footer button {
+        margin: 1rem  0;
+        padding: .5rem 0; } }
+
+/*# sourceMappingURL=style-page5.css.map */

@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/*头部部分*/
+body {
+  background-color: #29bde0; }
+
+header {
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  -webkit-display: flex;
+  -webkit-justify-content: space-between;
+  border-bottom: solid 1px #74d4eb;
+  font-size: 2rem;
+  color: #fff; }
+  header a {
+    color: #fff; }
+  header .iconfont {
+    font-size: 25px !important; }
+
+.contain {
+  text-align: center; }
+  .contain .row {
+    position: relative;
+    margin: 4rem auto 0;
+    width: 400px;
+    height: 500px;
+    max-width: 80%;
+    border: solid 4px #fff;
+    box-sizing: border-box;
+    background-color: #ffedc5; }
+    @media screen and (max-width: 750px) {
+      .contain .row {
+        height: 450px; } }
+    @media screen and (max-width: 400px) {
+      .contain .row {
+        height: 400px; } }
+    .contain .row .top_icon {
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: 4rem;
+      height: 4rem;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      font-size: 2.5rem;
+      color: #f56b81;
+      text-align: center;
+      line-height: 4rem;
+      background-color: #fff; }
+
+.contain1 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  max-width: 60%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.contain2 {
+  display: none; }
+  .contain2 .role {
+    padding-bottom: 1rem;
+    border-bottom: solid 1px #fff;
+    color: #29bde0;
+    font-size: 2.5rem;
+    font-weight: bold; }
+  .contain2 .remind_words {
+    display: inline-block;
+    padding: 2rem;
+    text-align: left;
+    color: #fbb435;
+    font-size: 2rem; }
+  .contain2 img {
+    display: block;
+    margin: 5rem auto 3rem;
+    width: 200px;
+    max-width: 60%; }
+
+#judge-btn {
+  display: none; }
+
+button {
+  display: block;
+  margin: 4rem auto 2rem;
+  width: 420px;
+  height: 4rem;
+  max-width: 85%;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #fbb435; }
+
+/*# sourceMappingURL=style-page3.css.map */
